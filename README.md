@@ -1,2 +1,0 @@
-# ReactAppWithJSX
-Created with CodeSandbox
