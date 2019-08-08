@@ -1,10 +1,22 @@
 import React, { Component } from "react";
+import "./styles.css";
 
 class Hello extends Component {
+  state = {
+    date1: new Date()
+  };
+
   render() {
     return (
-      <div>
-        <h1>Hello</h1>
+      <div className="style">
+        <h1>
+          {" "}
+          {this.state.date1.getFullYear() +
+            "-" +
+            this.state.date1.getMonth() +
+            "-" +
+            this.state.date1.getDate()}
+        </h1>
       </div>
     );
   }
